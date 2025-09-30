@@ -1,2 +1,3 @@
-# New_role
-Current Projects@2025
+# This repo serves as a directory for my hands-on project
+This was written in 2025
+
