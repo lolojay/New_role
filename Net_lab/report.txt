@@ -1,0 +1,24 @@
+# Checking Network Reachability using wget from my machine. 
+
+  wget --spider https://google.com
+Spider mode enabled. Check if remote file exists.
+--2025-09-30 22:23:28--  https://google.com/
+Resolving google.com (google.com)... 142.250.186.78
+Connecting to google.com (google.com)|142.250.186.78|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://www.google.com/ [following]
+Spider mode enabled. Check if remote file exists.
+--2025-09-30 22:23:29--  https://www.google.com/
+Resolving www.google.com (www.google.com)... 142.250.185.68
+Connecting to www.google.com (www.google.com)|142.250.185.68|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Remote file exists and could contain further links,
+but recursion is disabled -- not retrieving.
+
+# To view the status only
+
+$ curl -s -o /dev/null -w "%{http_code}" https://www.google.com
+200      
+
+# In the next txt file i created a script called checknet.sh that runs a network status for a website when a user puts in the website url.
