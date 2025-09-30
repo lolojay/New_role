@@ -22,3 +22,4 @@ $ curl -s -o /dev/null -w "%{http_code}" https://www.google.com
 200      
 
 # In the next txt file i created a script called checknet.sh that runs a network status for a website when a user puts in the website url.
+# I made another script that checks the url host called hostme.sh
